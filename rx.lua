@@ -1761,7 +1761,7 @@ end
 -- source Observable is used.
 -- @arg {Observable...} sources - The Observables to include the most recent values from.
 -- @returns {Observable}
-function Observable:with(...)
+function Observable:withLatestFrom(...)
   local sources = {...}
 
   return Observable.create(function(observer)
